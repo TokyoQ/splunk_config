@@ -19,9 +19,5 @@ def parse_file(filepath):
             print('{}| {}:{}'.format(section, key, value))
 
 
-def validate_inputs_conf():
-    return 0
-
-
 server_conf_file = 'C:\Program Files\Splunk\etc\system\local\server.conf'
 parse_file(server_conf_file)
