@@ -2,9 +2,6 @@ import configparser
 import os
 import shutil
 
-SPLUNK_HOME = 'C:\\Program Files\\Splunk'
-appFolder = '{}\\etc\\apps'.format(SPLUNK_HOME)
-
 
 def get_apps():
     apps = os.listdir(appFolder)
@@ -72,6 +69,9 @@ def create_app(app_name, app_label):
 
 
 ### MAIN
+SPLUNK_HOME = 'C:\\Program Files\\Splunk'
+appFolder = '{}\\etc\\apps'.format(SPLUNK_HOME)
+
 create_app('app1', 'APP1')
 #print(get_app_label('blastoff'))
 #update_app_label('blastoff', 'Blastoff forever!')
